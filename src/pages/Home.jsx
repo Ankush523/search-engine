@@ -1,5 +1,9 @@
 import React from 'react'
+import './Home.css'
 import { Link } from 'react-router-dom' 
+import AppsIcon from "@mui/icons-material/Apps"
+import { Avatar } from '@mui/material'
+
 const Home = () => {
   return (
     <div className='home'>
@@ -13,6 +17,8 @@ const Home = () => {
             <div className='home_righthead'>
                 <Link to="/gmail">Gmail</Link>
                 <Link to="/images">Images</Link>
+                <AppsIcon/>
+                <Avatar/>
             </div>
       </div>
 
