@@ -5,9 +5,9 @@ import "./Search.css"
 const Searching = () => {
   return (
     <div className='search'>
-        <div className='search_input'>
+        <div className='flex items-center border-[1px] h-[50px] px-[10px] py-[20px] rounded-full w-[800px] mt-[40px] max-w-2xl'>
           <Search className="search_inputIcon"/>
-          <input/>
+          <input className='flex-1 px-[10px] py-[10px] border-none focus:outline-0'/>
           <Mic/>
         </div>
     </div>
