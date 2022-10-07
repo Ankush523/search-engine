@@ -16,12 +16,6 @@
      margin-right: 50px;
 }
 
-.searchpage_headerbody > .search > .search_input{
-    margin-top: 0;
-    width: unset;
-    margin: unset;
-    max-width: unset;
-}
 
 .searchpage_options{
     display: flex;
@@ -54,6 +48,13 @@
     margin-left: 5px;
 }
 
+.searchpage_headerbody > .search > .search_input{
+    margin-top: 0;
+    width: unset;
+    margin: unset;
+    max-width: unset;
+}
+*/
 .searchpage_result{
     margin: 40px 0;
 }
@@ -83,4 +84,4 @@
 
 .searchpage_resultsnippet {
     margin-top: 10px;
-} */
+} 

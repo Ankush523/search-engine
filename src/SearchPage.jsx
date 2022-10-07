@@ -27,33 +27,29 @@ const SearchPage = () => {
                             <Link to="/all">All</Link>
                         </div>
 
-                        <div className='searchpage_option'>
+                        <div className='flex items-center mr-[20px]'>
                             <Description/>
                             <Link to="/news">News</Link>
                         </div>
 
-                        <div className='searchpage_option'>
+                        <div className='flex items-center mr-[20px]'>
                             <Image/>
                             <Link to="/images">Images</Link>
                         </div>
 
-                        <div className='searchpage_option'>
+                        <div className='flex items-center mr-[20px]'>
                             <LocalOffer/>
                             <Link to="/shopping">Shopping</Link>
                         </div>
 
-                        <div className='searchpage_option'>
+                        <div className='flex items-center mr-[20px]'>
                             <MoreVert/>
                             <Link to="/more">More</Link>
                         </div>
                     </div>
 
                     <div className='flex ml-[80px]'>
-                        <div className='searchpage_option'>
-                            <Link to="/settings">Settings</Link>
-                        </div>
-
-                        <div className='searchpage_option'>
+                        <div className='flex items-center mr-[20px]'>
                             <Link to="/tools">Tools</Link>
                         </div>
                     </div>
@@ -61,20 +57,20 @@ const SearchPage = () => {
             </div>
         </div>
         {term && (
-            <div className='max-w-2xl mt-[20px] ml-[240px] mb-[100px]'>
-                <p className='text-slate-300 text-[14px]'>
+            <div className='searchpage_results'>
+                <p className='searchpage_resultcount'>
                     About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime} seconds)
                 </p>
                 {data?.items.map(item => (
-                    <div className='m-[40px]'>
+                    <div className='searchpage_result'>
                         <a href={item.link}>
 
                             {item.displayLink}
                         </a>
-                        <a className='no-underline hover:underline' href={item.link}>
-                            <h2 className='font-medium'>{item.title}</h2>
+                        <a className='searchpage_resultTitle' href={item.link}>
+                            <h2>{item.title}</h2>
                         </a>
-                        <p className='mt-[10px]'>
+                        <p className='searchpage_resultsnippet'>
                             {item.snippet}
                         </p>
 
