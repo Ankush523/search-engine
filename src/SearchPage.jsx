@@ -1,4 +1,4 @@
-import { Description, Image, LocalOffer, More, MoreVert, PlayArrow, PlayArrowOutlined, PlayCircleFilledOutlined, Search, VideoCall, VideoCameraBack } from '@mui/icons-material'
+import { Description, Image, LocalOffer,MoreVert,Search} from '@mui/icons-material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Searching from './components/Searching'
