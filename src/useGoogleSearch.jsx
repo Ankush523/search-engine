@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import API_KEY from './Keys'
+import API_KEY from './keys'
 const CONTEXT_KEY = "f4216515604e84671"
 
 //custom hook
